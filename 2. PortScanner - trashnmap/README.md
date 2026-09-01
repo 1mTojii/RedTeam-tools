@@ -1,4 +1,6 @@
 # PortScanner (Java)
+NOTE: The same port scanner is in the blue team tool portfolio. The reason i reuploaded it here is the exact same tool can be used for red team activities
+
 I made a very, very  ancient version of nmap its just a simple TCP connect scan tool. Given a host and a port range it tries to
 open a connection to each port and reports which ones respond. It a very flimsy tool at that point just use Nmap this is just a tool i made for my portfolio c:
 
