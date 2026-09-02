@@ -1,6 +1,7 @@
 # lfihunter
 
-An LFI / path traversal fuzzer. Point it at a parameter with a `FUZZ`
+An LFI / path traversal fuzzer that was heavly vibecoded, reasoning behind it is i needed a better undersatnding of fuzzing in practise
+i didnt want to waste time on coding it on my own (i used claude Sonnet 5). The way you use it, you point it at a parameter with a `FUZZ`
 marker, and it throws a curated payload list at it. Traversal depths,
 encoding and null byte bypasses, and PHP wrapper tricks. It confirms hits
 by checking the response against known file signatures, not just
