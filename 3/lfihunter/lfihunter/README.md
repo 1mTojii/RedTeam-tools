@@ -1,7 +1,6 @@
 # lfihunter
 
-An LFI / path traversal fuzzer that was heavly vibecoded, reasoning behind it is i needed a better undersatnding of fuzzing in practise
-i didnt want to waste time on coding it on my own (i used claude Sonnet 5). The way you use it, you point it at a parameter with a `FUZZ`
+An LFI / path traversal fuzzer. The way you use it, you point it at a parameter with a `FUZZ`
 marker, and it throws a curated payload list at it. Traversal depths,
 encoding and null byte bypasses, and PHP wrapper tricks. It confirms hits
 by checking the response against known file signatures, not just
@@ -122,12 +121,13 @@ This is an active exploitation tool, not a passive scanner. It sends
 traversal and wrapper payloads intended to pull real file contents off a
 target. Only run this against systems you own or have explicit written
 permission to test: HTB boxes, CTF targets, your own lab. Running this
-against a target you don't have authorization for is unauthorized
-computer access in most jurisdictions, regardless of intent.
+against a target you don't have authorization for will end up badly fyi.
 
 ## Why this exists
 
-Built while working through HTB Academy's LFI module. Automates the
+Built while working through HTB Academy's LFI module. this project was heavly vibecoded, 
+reasoning behind it is i needed a better undersatnding of fuzzing in practise
+i didnt want to waste time on coding it on my own (i used claude Sonnet 5). Lfihunter Automates the
 manual `../` fumbling and wrapper guessing into something that tries the
 common variations in one pass, and confirms hits properly instead of
 eyeballing responses. AI assisted build, understood and tested by me,
